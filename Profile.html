@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Stephen Walikhe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 id="greeting">Welcome to My Profile</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about" class="profile-section">
+            <div class="profile-header">
+                <img src="Profile.jpg" alt="Stephen Walikhe" class="profile-img">
+                <div>
+                    <h2>Stephen Walikhe</h2>
+                    <p class="title">Web Developer</p>
+                </div>
+            </div>
+            
+            <div class="bio">
+                <h3>About Me</h3>
+                <p id="short-bio">I'm a passionate web developer with experience in HTML, CSS,PHP,MYSQL and JavaScript. I love creating interactive and user-friendly web applications...</p>
+                <p id="full-bio" class="hidden">I'm a passionate web developer with experience in HTML, CSS,PHP,MYSQL and JavaScript. I love creating interactive and user-friendly web applications. Currently pursuing my degree in Information Technology, I'm constantly learning new technologies to enhance my skills. When I'm not coding, you can find me hiking, reading tech blogs, or cookig delicious meal.</p>
+                <button id="read-more-btn" class="btn">Read More</button>
+            </div>
+        </section>
+
+        <section id="skills" class="profile-section">
+            <h3>My Skills</h3>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>MYSQL</li>
+                <li>Responsive Design</li>
+                <li>Git Version Control</li>
+            </ul>
+            <button id="skills-btn" class="btn">Highlight Top Skill</button>
+        </section>
+
+        <section id="projects" class="profile-section">
+            <h3>My Projects</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h4>Personal Portfolio</h4>
+                    <p>A responsive portfolio website showcasing my work.</p>
+                </div>
+                <div class="project-card">
+                    <h4>Todo App</h4>
+                    <p>A JavaScript-based task management application.</p>
+                </div>
+                <div class="project-card">
+                    <h4>Weather Dashboard</h4>
+                    <p>An app that displays weather information using API calls.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="profile-section">
+            <h3>Contact Me</h3>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+                <p id="form-error" class="error-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Stephen Walikhe. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
