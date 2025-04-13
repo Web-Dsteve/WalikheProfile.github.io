@@ -85,10 +85,7 @@ function setupFormValidation() {
         alert(`Thank you, ${name}! Your message has been submitted.`);
         contactForm.reset();
     });
-}
-  function showAlert() {
-    alert('Thanks for visiting my profile page!');
-  }
+ 
 
 // Initialize all functions when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
