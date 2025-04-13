@@ -86,6 +86,9 @@ function setupFormValidation() {
         contactForm.reset();
     });
 }
+  function showAlert() {
+    alert('Thanks for visiting my profile page!');
+  }
 
 // Initialize all functions when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
