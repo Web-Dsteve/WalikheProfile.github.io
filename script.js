@@ -51,6 +51,9 @@ function setupSkillsButton() {
         // Show alert
         alert('Top skill highlighted!');
     });
+     function showAlert() {
+    alert('Thanks for visiting my profile page!');
+  }
 }
 
 // Form validation
