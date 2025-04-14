@@ -25,7 +25,7 @@
     <main class="container">
         <section id="about" class="profile-section">
             <div class="profile-header">
-                <img src="Profile.jpg" alt="Stephen Walikhe" class="profile-img">
+                <img src="profile.jpg" alt="Stephen Walikhe" class="profile-img">
                 <div>
                     <h2>Stephen Walikhe</h2>
                     <p class="title">Web Developer</p>
@@ -34,8 +34,8 @@
             
             <div class="bio">
                 <h3>About Me</h3>
-                <p id="short-bio">I'm a passionate web developer with experience in HTML, CSS, PHP, MYSQL, and JavaScript. I love creating interactive and user-friendly web applications...</p>
-                <p id="full-bio" class="hidden">I'm a passionate web developer with experience in HTML, CSS, PHP, MYSQL, and JavaScript. I love creating interactive and user-friendly web applications. Currently pursuing my degree in Information Technology, I'm constantly learning new technologies to enhance my skills. When I'm not coding, you can find me hiking, reading tech blogs, or cooking a delicious meal.</p>
+                <p id="short-bio">I'm a passionate web developer with experience in HTML, CSS, JavaScript, PHP, and MySQL. I love creating interactive and user-friendly web applications...</p>
+                <p id="full-bio" class="hidden">I'm a passionate web developer with experience in HTML, CSS, JavaScript, PHP, and MySQL. I love creating interactive and user-friendly web applications. Currently pursuing my degree in Information Technology, I'm constantly learning new technologies to enhance my skills. When I'm not coding, you can find me hiking, reading tech blogs, or cooking a delicious meal.</p>
                 <button id="read-more-btn" class="btn">Read More</button>
             </div>
         </section>
@@ -47,7 +47,7 @@
                 <li>CSS3</li>
                 <li>JavaScript</li>
                 <li>PHP</li>
-                <li>MYSQL</li>
+                <li>MySQL</li>
                 <li>Responsive Design</li>
                 <li>Git Version Control</li>
             </ul>
@@ -73,47 +73,52 @@
         </section>
 
         <section id="contact" class="profile-section">
-            <h3>Ready to do business?Contact Me</h3>
+            <h3>Ready to do business? Contact Me</h3>
             <form id="contact-form">
                 <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="contact-name">Name:</label>
+                    <input type="text" id="contact-name" name="contact-name" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="contact-email">Email:</label>
+                    <input type="email" id="contact-email" name="contact-email" required>
                 </div>
                 <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4"></textarea>
+                    <label for="contact-message">Message:</label>
+                    <textarea id="contact-message" name="contact-message" rows="4"></textarea>
                 </div>
                 <button type="submit" class="btn">Send Message</button>
                 <p id="form-error" class="error-message"></p>
             </form>
         </section>
 
-         <section class="Newsletter">
-      <h3>Subscribe to my Newsletter</h3>
-      <form onsubmit="return validateForm()">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" /><br/>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" /><br/>
-        <button type="submit">Subscribe</button>
-        <p id="error-message" class="error"></p>
-      </form>
-    </section>
-  </main>
+        <section class="newsletter">
+            <h3>Subscribe to my Newsletter</h3>
+            <form id="newsletter-form">
+                <div class="form-group">
+                    <label for="newsletter-name">Name:</label>
+                    <input type="text" id="newsletter-name" name="newsletter-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="newsletter-email">Email:</label>
+                    <input type="email" id="newsletter-email" name="newsletter-email" required>
+                </div>
+                <button type="submit" class="btn">Subscribe</button>
+                <p id="newsletter-error" class="error-message"></p>
+            </form>
+        </section>
+    </main>
+
     <footer>
         <div class="container">
             <p>&copy; 2025 Stephen Walikhe. All rights reserved.</p>
             <div class="social-links">
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="Twitter">Twitter</a>
             </div>
         </div>
     </footer>
 </body>
-</html>
+</html>           
