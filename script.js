@@ -51,9 +51,10 @@ function setupSkillsButton() {
         // Show alert
         alert('Top skill highlighted!');
     });
-     function showAlert() {
+}
+
+function showAlert() {
     alert('Thanks for visiting my profile page!');
-  }
 }
 
 // Form validation
@@ -88,7 +89,7 @@ function setupFormValidation() {
         alert(`Thank you, ${name}! Your message has been submitted.`);
         contactForm.reset();
     });
- 
+}
 
 // Initialize all functions when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
